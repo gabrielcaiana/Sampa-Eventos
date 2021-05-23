@@ -7,6 +7,7 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<Button>` | `<button>` (components/atoms/Button.vue)
+- `<ForgotPassword>` | `<forgot-password>` (components/atoms/ForgotPassword.vue)
 - `<Input>` | `<input>` (components/atoms/Input.vue)
 - `<Logo>` | `<logo>` (components/atoms/Logo.vue)
 - `<Select>` | `<select>` (components/atoms/Select.vue)

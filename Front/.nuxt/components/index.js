@@ -1,6 +1,7 @@
 import { wrapFunctional } from './utils'
 
 export { default as Button } from '../../components/atoms/Button.vue'
+export { default as ForgotPassword } from '../../components/atoms/ForgotPassword.vue'
 export { default as Input } from '../../components/atoms/Input.vue'
 export { default as Logo } from '../../components/atoms/Logo.vue'
 export { default as Select } from '../../components/atoms/Select.vue'
@@ -12,6 +13,7 @@ export { default as LoginTemplate } from '../../components/templates/LoginTempla
 export { default as RegisterTemplate } from '../../components/templates/RegisterTemplate.vue'
 
 export const LazyButton = import('../../components/atoms/Button.vue' /* webpackChunkName: "components/button" */).then(c => wrapFunctional(c.default || c))
+export const LazyForgotPassword = import('../../components/atoms/ForgotPassword.vue' /* webpackChunkName: "components/forgot-password" */).then(c => wrapFunctional(c.default || c))
 export const LazyInput = import('../../components/atoms/Input.vue' /* webpackChunkName: "components/input" */).then(c => wrapFunctional(c.default || c))
 export const LazyLogo = import('../../components/atoms/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c))
 export const LazySelect = import('../../components/atoms/Select.vue' /* webpackChunkName: "components/select" */).then(c => wrapFunctional(c.default || c))

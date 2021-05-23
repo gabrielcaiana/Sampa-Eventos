@@ -16,7 +16,7 @@
           placeholder="Informe uma senha"
         />
 
-        <p class="form__forgot-password">Esqueceu sua senha?</p>
+        <ForgotPassword />
 
         <div class="form__actions">
           <NuxtLink to="/home">
@@ -58,22 +58,6 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-  }
-
-  &__forgot-password {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem 0;
-    font-size: 1rem;
-    cursor: pointer;
-    color: $primary;
-    font-weight: 600;
-    transition: all 300ms;
-
-    &:hover {
-      filter: brightness(120%);
-    }
   }
 }
 </style>

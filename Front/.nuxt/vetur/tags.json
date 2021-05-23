@@ -2,6 +2,9 @@
   "Button": {
     "description": "Auto imported from components/atoms/Button.vue"
   },
+  "ForgotPassword": {
+    "description": "Auto imported from components/atoms/ForgotPassword.vue"
+  },
   "Input": {
     "description": "Auto imported from components/atoms/Input.vue"
   },
