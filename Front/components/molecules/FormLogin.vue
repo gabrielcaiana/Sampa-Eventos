@@ -16,6 +16,8 @@
           placeholder="Informe uma senha"
         />
 
+        <p>Esqueceu sua senha?</p>
+
         <div class="form__actions">
           <NuxtLink to="/home">
             <Button

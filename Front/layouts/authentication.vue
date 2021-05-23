@@ -18,8 +18,7 @@
 
   &__presentation {
     background-color: $primary;
-    min-height: 100vh;
+    min-height: 102vh;
   }
 }
 </style>
-ß
