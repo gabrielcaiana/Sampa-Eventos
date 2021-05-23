@@ -1,0 +1,61 @@
+<template>
+  <form class="form" @submit.prevent="login">
+    <v-row>
+      <v-col cols="12">
+        <Input
+          v-model="form.email"
+          text="Email"
+          type="Email"
+          placeholder="Informe seu email"
+        />
+
+        <Input
+          v-model="form.password"
+          text="Senha"
+          type="password"
+          placeholder="Informe uma senha"
+        />
+
+        <div class="form__actions">
+          <NuxtLink to="/home">
+            <Button
+              type="button"
+              text="Voltar ao início"
+              color="outlined-default"
+              path="/home"
+            />
+          </NuxtLink>
+          <Button type="submit" text="Entrar" color="button-default" />
+        </div>
+      </v-col>
+    </v-row>
+  </form>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    form: {
+      email: '',
+      password: '',
+    },
+  }),
+
+  methods: {
+    login() {
+      console.log(this.form)
+    },
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.form {
+  &__actions {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+</style>
