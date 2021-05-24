@@ -13,6 +13,10 @@ O sampa eventos é um portal ficticio onde você pode encontrar e cadastrar even
 
 - Adonis
 
+**Banco de dados**
+
+- Mysql
+
 **Testes**
 
 - Jest
