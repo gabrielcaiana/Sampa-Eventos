@@ -1,6 +1,6 @@
 # Sampa-Eventos
 
-O sampa eventos é um portal ficticio onde você pode encontrar e cadastrar eventos em São Paulo.
+O sampa eventos é um portal fictício onde você pode encontrar e cadastrar eventos em São Paulo.
 
 ## Funcionalidades
 
