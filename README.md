@@ -23,7 +23,7 @@ O sampa eventos é um portal fictício onde você pode encontrar e cadastrar eve
 
 **Protótipo**
 
-> O sistema ainda está sendo prototipado
+> O sistema ainda está sendo prototipado conforme a necessidade do desenvolvimento
 
 https://www.figma.com/file/t1bxioILdpjsriaa97jBAm/Sampa-eventos?node-id=0%3A1
 
