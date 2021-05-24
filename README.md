@@ -33,7 +33,6 @@ https://www.figma.com/file/t1bxioILdpjsriaa97jBAm/Sampa-eventos?node-id=0%3A1
 **Frontend**
 
 - Nuxt.js
-- Vuetify
 
 **Backend**
 
@@ -46,4 +45,3 @@ https://www.figma.com/file/t1bxioILdpjsriaa97jBAm/Sampa-eventos?node-id=0%3A1
 **Testes**
 
 - Jest
-- Vue test Utils
