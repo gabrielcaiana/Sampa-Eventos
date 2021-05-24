@@ -1,6 +1,16 @@
 <template>
-  <p class="forgot-password">Esqueceu sua senha?</p>
+  <p class="forgot-password" @click="forgotPassword">Esqueceu sua senha?</p>
 </template>
+
+<script>
+export default {
+  methods: {
+    forgotPassword() {
+      this.$store.dispatch('dialog/showDialog', true)
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .forgot-password {

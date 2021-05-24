@@ -11,6 +11,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Input>` | `<input>` (components/atoms/Input.vue)
 - `<Logo>` | `<logo>` (components/atoms/Logo.vue)
 - `<Select>` | `<select>` (components/atoms/Select.vue)
+- `<ForgotDialog>` | `<forgot-dialog>` (components/molecules/ForgotDialog.vue)
 - `<FormLogin>` | `<form-login>` (components/molecules/FormLogin.vue)
 - `<FormRegister>` | `<form-register>` (components/molecules/FormRegister.vue)
 - `<LoginCard>` | `<login-card>` (components/organisms/LoginCard.vue)

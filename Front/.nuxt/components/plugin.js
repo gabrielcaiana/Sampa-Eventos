@@ -7,6 +7,7 @@ const components = {
   Input: () => import('../../components/atoms/Input.vue' /* webpackChunkName: "components/input" */).then(c => wrapFunctional(c.default || c)),
   Logo: () => import('../../components/atoms/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c)),
   Select: () => import('../../components/atoms/Select.vue' /* webpackChunkName: "components/select" */).then(c => wrapFunctional(c.default || c)),
+  ForgotDialog: () => import('../../components/molecules/ForgotDialog.vue' /* webpackChunkName: "components/forgot-dialog" */).then(c => wrapFunctional(c.default || c)),
   FormLogin: () => import('../../components/molecules/FormLogin.vue' /* webpackChunkName: "components/form-login" */).then(c => wrapFunctional(c.default || c)),
   FormRegister: () => import('../../components/molecules/FormRegister.vue' /* webpackChunkName: "components/form-register" */).then(c => wrapFunctional(c.default || c)),
   LoginCard: () => import('../../components/organisms/LoginCard.vue' /* webpackChunkName: "components/login-card" */).then(c => wrapFunctional(c.default || c)),

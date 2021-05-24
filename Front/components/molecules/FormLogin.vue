@@ -16,7 +16,7 @@
           placeholder="Informe uma senha"
         />
 
-        <ForgotPassword />
+        <ForgotPassword @openModal="showModal($event)" />
 
         <div class="form__actions">
           <NuxtLink to="/home">
@@ -31,12 +31,15 @@
         </div>
       </v-col>
     </v-row>
+
+    <div class="dialog" v-if="dialog"></div>
   </form>
 </template>
 
 <script>
 export default {
   data: () => ({
+    dialog: false,
     form: {
       email: '',
       password: '',
@@ -46,6 +49,12 @@ export default {
   methods: {
     login() {
       console.log(this.form);
+    },
+
+    showModal(event) {
+      if(event) {
+        this.dialog = !this.dialog
+      }
     },
   },
 };
@@ -59,5 +68,13 @@ export default {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
+}
+
+.dialog {
+  position: absolute;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
 }
 </style>

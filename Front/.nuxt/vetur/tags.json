@@ -14,6 +14,9 @@
   "Select": {
     "description": "Auto imported from components/atoms/Select.vue"
   },
+  "ForgotDialog": {
+    "description": "Auto imported from components/molecules/ForgotDialog.vue"
+  },
   "FormLogin": {
     "description": "Auto imported from components/molecules/FormLogin.vue"
   },
