@@ -1,4 +1,10 @@
 {
+  "LoginCard": {
+    "description": "Auto imported from components/organisms/LoginCard.vue"
+  },
+  "RegisterCard": {
+    "description": "Auto imported from components/organisms/RegisterCard.vue"
+  },
   "Button": {
     "description": "Auto imported from components/atoms/Button.vue"
   },
@@ -22,12 +28,6 @@
   },
   "FormRegister": {
     "description": "Auto imported from components/molecules/FormRegister.vue"
-  },
-  "LoginCard": {
-    "description": "Auto imported from components/organisms/LoginCard.vue"
-  },
-  "RegisterCard": {
-    "description": "Auto imported from components/organisms/RegisterCard.vue"
   },
   "LoginTemplate": {
     "description": "Auto imported from components/templates/LoginTemplate.vue"

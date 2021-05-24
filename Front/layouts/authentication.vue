@@ -25,7 +25,7 @@
 
   &__presentation {
     background-image: url('@/assets/images/stars.svg');
-    background-size: cover;
+    background-size: 102vh auto;
     background-repeat: no-repeat;
     background-color: $primary;
     min-height: 102vh;
@@ -35,7 +35,8 @@
     padding: 0 8rem;
 
     &__description {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      max-width: 550px;
       color: $white;
       font-weight: 700;
 
