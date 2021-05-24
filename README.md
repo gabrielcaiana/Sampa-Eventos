@@ -4,7 +4,7 @@ O sampa eventos é um portal ficticio onde você pode encontrar e cadastrar even
 
 ## Funcionalidades
 
-** Usuario **
+**Usuario**
 
 - Cadastro do usuário
 - Login do usuário
@@ -12,7 +12,7 @@ O sampa eventos é um portal ficticio onde você pode encontrar e cadastrar even
 - Edição das informações do usuário
 - Upload de foto
 
-** Eventos **
+**Eventos**
 
 - Cadastro de evento
 - Edição de evento
@@ -21,7 +21,7 @@ O sampa eventos é um portal ficticio onde você pode encontrar e cadastrar even
 - Exibição de um evento
 - Pesquisar evento por nome, data ou categoria
 
-** Protótipo **
+**Protótipo**
 
 > O sistema ainda está sendo prototipado
 
