@@ -47,7 +47,7 @@
 
         <v-row>
           <v-col cols="12" class="form__actions">
-            <NuxtLink to="/home">
+            <NuxtLink to="/">
               <Button
                 type="button"
                 text="Voltar ao início"

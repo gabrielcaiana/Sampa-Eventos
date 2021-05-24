@@ -19,7 +19,7 @@
         <ForgotPassword @openModal="showModal($event)" />
 
         <div class="form__actions">
-          <NuxtLink to="/home">
+          <NuxtLink to="/">
             <Button
               type="button"
               text="Voltar ao início"

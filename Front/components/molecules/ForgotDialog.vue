@@ -22,17 +22,17 @@
 </template>
 
 <script>
-import { mapGetters  } from 'vuex';
+import { mapGetters } from 'vuex';
 export default {
   data: () => ({
     email: '',
   }),
 
-   computed: {
-     ...mapGetters({
-       $dialog: 'dialog/$dialog'
-     })
-   },
+  computed: {
+    ...mapGetters({
+      $dialog: 'dialog/$dialog',
+    }),
+  },
 
   methods: {
     submit() {
@@ -40,7 +40,7 @@ export default {
     },
 
     closeModal() {
-      this.$store.dispatch('dialog/showDialog', false)
+      this.$store.dispatch('dialog/showDialog', false);
     },
   },
 };
