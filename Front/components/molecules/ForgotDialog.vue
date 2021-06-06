@@ -22,27 +22,31 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { ref, useStore, computed } from '@nuxtjs/composition-api'
 export default {
-  data: () => ({
-    email: '',
-  }),
+  setup() {
+    let email = ref('')
 
-  computed: {
-    ...mapGetters({
-      $dialog: 'dialog/$dialog',
-    }),
-  },
+    const store = useStore()
 
-  methods: {
-    submit() {
-      console.log(this.$dialog);
-    },
+    let $dialog = computed(() => store.getters['dialog/$dialog'])
 
-    closeModal() {
-      this.$store.dispatch('dialog/showDialog', false);
-    },
-  },
+    function submit() {
+      console.log($dialog.value)
+    }
+
+    function closeModal() {
+      email.value = ''
+      store.dispatch('dialog/showDialog', false);
+    }
+
+    return {
+      email,
+      $dialog,
+      submit,
+      closeModal
+    }
+  }
 };
 </script>
 

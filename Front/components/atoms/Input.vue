@@ -23,12 +23,16 @@ export default {
     value: { type: String, required: true },
   },
 
-  methods: {
-    updateValue(event) {
-      this.$emit('input', event.target.value)
-    },
+  setup() {
+    function updateValue(event) {
+      this.$emit('input', event.target.value);
+    }
+
+    return {
+      updateValue,
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

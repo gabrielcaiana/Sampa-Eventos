@@ -64,24 +64,30 @@
 </template>
 
 <script>
+import { reactive } from '@nuxtjs/composition-api';
 export default {
-  data: () => ({
-    items: ['Não binário', 'Masculino', 'Feminino'],
-    form: {
+  setup() {
+    let items = ['Não binário', 'Masculino', 'Feminino'];
+
+    let form = reactive({
       name: '',
       email: '',
       cell: '',
       gender: '',
       password: '',
-    },
-  }),
+    });
 
-  methods: {
-    register() {
-      console.log(this.form)
-    },
+    function register() {
+      console.log(form);
+    }
+
+    return {
+      items,
+      form,
+      register,
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

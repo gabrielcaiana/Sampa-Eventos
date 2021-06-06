@@ -10,8 +10,8 @@ export default {
     text: { type: String, required: true },
     color: { type: String, required: true },
     type: { type: String, required: true },
-  },
-}
+  }
+};
 </script>
 
 <style lang="scss" scoped>

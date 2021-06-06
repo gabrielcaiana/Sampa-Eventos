@@ -3,11 +3,18 @@
 </template>
 
 <script>
+import  { useStore } from '@nuxtjs/composition-api'
 export default {
-  methods: {
-    forgotPassword() {
-      this.$store.dispatch('dialog/showDialog', true)
-    },
+  setup() {
+    const store = useStore()
+
+    function forgotPassword() {
+      store.dispatch('dialog/showDialog', true);
+    }
+
+    return {
+      forgotPassword,
+    };
   },
 };
 </script>

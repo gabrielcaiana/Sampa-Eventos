@@ -37,25 +37,32 @@
 </template>
 
 <script>
+import { reactive } from '@nuxtjs/composition-api';
 export default {
-  data: () => ({
-    dialog: false,
-    form: {
+  setup() {
+    let dialog = false;
+
+    let form = reactive({
       email: '',
       password: '',
-    },
-  }),
+    });
 
-  methods: {
-    login() {
-      console.log(this.form);
-    },
+    function login() {
+      console.log(form);
+    }
 
-    showModal(event) {
-      if(event) {
-        this.dialog = !this.dialog
+    function showModal(event) {
+      if (event) {
+        dialog.value = !dialog.value;
       }
-    },
+    }
+
+    return {
+      dialog,
+      form,
+      login,
+      showModal,
+    };
   },
 };
 </script>
