@@ -1,5 +1,5 @@
 <template>
-  <button :type="type" class="button-default" :class="color">
+  <button :type="type" class="button-default" :class="color" @keyup.enter="defaultAction">
     {{ text }}
   </button>
 </template>
@@ -10,7 +10,13 @@ export default {
     text: { type: String, required: true },
     color: { type: String, required: true },
     type: { type: String, required: true },
-  }
+  },
+  
+   methods: {
+    defaultAction() {
+      console.log('Hello World')
+    }
+  },
 };
 </script>
 
