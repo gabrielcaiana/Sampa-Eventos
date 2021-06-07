@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, column, beforeSave } from '@ioc:Adonis/Lucid/Orm'
+import Hash from "@ioc:Adonis/Core/Hash";
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
@@ -19,6 +20,9 @@ export default class User extends BaseModel {
 
   @column()
   public gender: string
+
+  @column()
+  public rememberMeToken?: string
   
   @column.dateTime({ autoCreate: true, serialize: (value:DateTime) => {
     return value.toFormat("dd/MM/yyyy HH:mm:ss")
@@ -30,4 +34,11 @@ export default class User extends BaseModel {
     return value.toFormat("dd/MM/yyyy HH:mm:ss")
   }})
   public updatedAt: DateTime
+
+  @beforeSave()
+  public static async hasPassword(user: User) {
+    if(user.$dirty.passowrd) {
+      user.password = await Hash.make(user.password)
+    }
+  }
 }
