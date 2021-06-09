@@ -16,5 +16,10 @@ export default {
     } catch(err) {
       console.log(err.response)
     }
+  }, 
+
+  async update({ commit }) {
+    const token = this.$cookies.get('token' || null )
+    commit('UPDATE_TOKEN', token)
   }
 }
