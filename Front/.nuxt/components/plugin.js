@@ -17,6 +17,7 @@ const components = {
   Header: () => import('../../components/organisms/Header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c)),
   LoginCard: () => import('../../components/organisms/LoginCard.vue' /* webpackChunkName: "components/login-card" */).then(c => wrapFunctional(c.default || c)),
   RegisterCard: () => import('../../components/organisms/RegisterCard.vue' /* webpackChunkName: "components/register-card" */).then(c => wrapFunctional(c.default || c)),
+  DashboardTemplate: () => import('../../components/templates/DashboardTemplate.vue' /* webpackChunkName: "components/dashboard-template" */).then(c => wrapFunctional(c.default || c)),
   LoginTemplate: () => import('../../components/templates/LoginTemplate.vue' /* webpackChunkName: "components/login-template" */).then(c => wrapFunctional(c.default || c)),
   RegisterTemplate: () => import('../../components/templates/RegisterTemplate.vue' /* webpackChunkName: "components/register-template" */).then(c => wrapFunctional(c.default || c)),
   SiteTemplate: () => import('../../components/templates/SiteTemplate.vue' /* webpackChunkName: "components/site-template" */).then(c => wrapFunctional(c.default || c))

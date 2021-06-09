@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <div v-if="isAuth" class="container">
-      <Logo />
+      <nuxt-link to="/">
+        <Logo />
+      </nuxt-link>
       <div @click="logout">
         <Button text="Logout" color="outlined-default" />
       </div>

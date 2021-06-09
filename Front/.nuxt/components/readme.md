@@ -21,6 +21,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Header>` | `<header>` (components/organisms/Header.vue)
 - `<LoginCard>` | `<login-card>` (components/organisms/LoginCard.vue)
 - `<RegisterCard>` | `<register-card>` (components/organisms/RegisterCard.vue)
+- `<DashboardTemplate>` | `<dashboard-template>` (components/templates/DashboardTemplate.vue)
 - `<LoginTemplate>` | `<login-template>` (components/templates/LoginTemplate.vue)
 - `<RegisterTemplate>` | `<register-template>` (components/templates/RegisterTemplate.vue)
 - `<SiteTemplate>` | `<site-template>` (components/templates/SiteTemplate.vue)

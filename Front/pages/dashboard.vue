@@ -1,15 +1,10 @@
 <template>
-<transition name="slide">
-  <div>
-    <h1>Dashboard</h1>
-     <Footer />
-  </div>
-</transition>
+  <DashboardTemplate />
 </template>
 
 <script>
 export default {
   middleware: 'auth',
-  pageTransition: "slide",
+  layout: 'site'
 }
 </script>

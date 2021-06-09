@@ -44,6 +44,9 @@
   "RegisterCard": {
     "description": "Auto imported from components/organisms/RegisterCard.vue"
   },
+  "DashboardTemplate": {
+    "description": "Auto imported from components/templates/DashboardTemplate.vue"
+  },
   "LoginTemplate": {
     "description": "Auto imported from components/templates/LoginTemplate.vue"
   },
