@@ -1,19 +1,4 @@
 {
-  "Button": {
-    "description": "Auto imported from components/atoms/Button.vue"
-  },
-  "ForgotPassword": {
-    "description": "Auto imported from components/atoms/ForgotPassword.vue"
-  },
-  "Input": {
-    "description": "Auto imported from components/atoms/Input.vue"
-  },
-  "Logo": {
-    "description": "Auto imported from components/atoms/Logo.vue"
-  },
-  "Select": {
-    "description": "Auto imported from components/atoms/Select.vue"
-  },
   "ForgotDialog": {
     "description": "Auto imported from components/molecules/ForgotDialog.vue"
   },
@@ -28,6 +13,24 @@
   },
   "RegisterCard": {
     "description": "Auto imported from components/organisms/RegisterCard.vue"
+  },
+  "Button": {
+    "description": "Auto imported from components/atoms/Button.vue"
+  },
+  "ForgotPassword": {
+    "description": "Auto imported from components/atoms/ForgotPassword.vue"
+  },
+  "Input": {
+    "description": "Auto imported from components/atoms/Input.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/atoms/Logo.vue"
+  },
+  "LogoWhite": {
+    "description": "Auto imported from components/atoms/LogoWhite.vue"
+  },
+  "Select": {
+    "description": "Auto imported from components/atoms/Select.vue"
   },
   "LoginTemplate": {
     "description": "Auto imported from components/templates/LoginTemplate.vue"

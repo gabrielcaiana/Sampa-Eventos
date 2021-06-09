@@ -4,7 +4,7 @@ import { StoreValidator, UpdateValidator } from 'App/Validators/User'
 
 export default class UsersController {
   public async index ({}: HttpContextContract) {
-    const users =  await User.query().orderBy('id', 'desc')
+    const users =  await User.all()
 
     return users
   }

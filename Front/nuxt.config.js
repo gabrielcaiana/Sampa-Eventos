@@ -21,7 +21,7 @@ export default {
   css: ['@/assets/scss/base.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['@/plugins/axios'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [{ path: '@/components', pathPrefix: false }],
@@ -38,14 +38,16 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
 
   // https://go.nuxtjs.dev/axios
-  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources', 'cookie-universal-nuxt'],
 
   styleResources: {
     scss: ['@/components/bosons/colors.scss']
    },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:3333'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

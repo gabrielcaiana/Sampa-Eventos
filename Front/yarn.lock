@@ -1511,11 +1511,11 @@
     defu "^5.0.0"
 
 "@nuxtjs/composition-api@^0.24.3":
-  version "0.24.3"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/composition-api/-/composition-api-0.24.3.tgz#d8219801dbc3b44bdf95d9417725e80caf6d1ae8"
-  integrity sha512-x/Z/IA0YWGfRSVUPuzZJzLFtg/VZoKVF5u7kmeRrnRQxutt+kCE2sKmyt0SPCqM0SocE7mlfKVgQTj4YF+YxPA==
+  version "0.24.4"
+  resolved "https://registry.npmjs.org/@nuxtjs/composition-api/-/composition-api-0.24.4.tgz"
+  integrity sha512-WRQGVgE1MbwYVOvFeGfToOjb6w3D2lxWM54N4HMFOPmDJI9+XngJQZgtuQCBUSsEZ3a3dpejBSzSYyEC7FrdvQ==
   dependencies:
-    "@vue/composition-api" "1.0.0-rc.10"
+    "@vue/composition-api" "1.0.0-rc.11"
     defu "^5.0.0"
     estree-walker "^2.0.2"
     fs-extra "^9.1.0"
@@ -1639,6 +1639,11 @@
   integrity sha512-Vs0hm0vPahPMYi9tDjtP66llufgO3ST16WXaSTtDGEl9cewAl3AibmxWw6TINOqHPT9z0uABKAYjT9jNSg4npw==
   dependencies:
     "@babel/types" "^7.3.0"
+
+"@types/cookie@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.npmjs.org/@types/cookie/-/cookie-0.3.3.tgz"
+  integrity sha512-LKVP3cgXBT9RYj+t+9FDKwS5tdI+rPBXaNSkma7hvqy35lc7mAokC2zsqWJH0LaqIt3B962nuYI77hsJoT1gow==
 
 "@types/eslint@^7.2.6":
   version "7.2.10"
@@ -1928,10 +1933,10 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@1.0.0-rc.10":
-  version "1.0.0-rc.10"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.0.0-rc.10.tgz#a98e2b810613531bbbbd3b4c0a9fc46198cc931d"
-  integrity sha512-ftm4OU8H1Ipw64gxIVqzlCW9lJrtr9iOJME0/KJ/fWmVGy55Qbd0uIgIttOkCdLL94A5cjTSbJFTQhu9jBDRXw==
+"@vue/composition-api@1.0.0-rc.11":
+  version "1.0.0-rc.11"
+  resolved "https://registry.npmjs.org/@vue/composition-api/-/composition-api-1.0.0-rc.11.tgz"
+  integrity sha512-rB5cKeNZlHdjEYre2vBzdid+e09Mf2HmMrg31NCT6c1G6bgX1CJ6V8H7owo9+wK/O2YyN9AEkIVLOczP9s0VTQ==
   dependencies:
     tslib "^2.2.0"
 
@@ -3430,10 +3435,31 @@ convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
+cookie-universal-nuxt@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/cookie-universal-nuxt/-/cookie-universal-nuxt-2.1.4.tgz#323f8645501f88cb2422127ad8ba2ee40187b716"
+  integrity sha512-xbn4Ozs9S0u2+0mQTZRwGlBL9MGNq8N4H6iGfprR5ufZFCS2hGef++3DBHSmHXZi30Wu3Q7RI/GkNMhz3cecmg==
+  dependencies:
+    "@types/cookie" "^0.3.3"
+    cookie-universal "^2.1.4"
+
+cookie-universal@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.npmjs.org/cookie-universal/-/cookie-universal-2.1.4.tgz"
+  integrity sha512-dwWXs7NGBzaBYDypu3jWH5M3NJW+zu5QdyJkFMHJvhLuyL4/eXG4105fwtTDwfIqyTunwVvQX4PHdtfPDS7URQ==
+  dependencies:
+    "@types/cookie" "^0.3.3"
+    cookie "^0.4.0"
+
 cookie@^0.3.1:
   version "0.3.1"
   resolved "https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz"
   integrity sha1-5+Ch+e9DtMi6klxcWpboBtFoc7s=
+
+cookie@^0.4.0:
+  version "0.4.1"
+  resolved "https://registry.npmjs.org/cookie/-/cookie-0.4.1.tgz"
+  integrity sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -4584,7 +4610,7 @@ estraverse@^5.1.0, estraverse@^5.2.0:
 
 estree-walker@^2.0.2:
   version "2.0.2"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
+  resolved "https://registry.npmjs.org/estree-walker/-/estree-walker-2.0.2.tgz"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
 esutils@^2.0.2:
@@ -6848,7 +6874,7 @@ lru-cache@^6.0.0:
 
 magic-string@^0.25.7:
   version "0.25.7"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
+  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz"
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
   dependencies:
     sourcemap-codec "^1.4.4"
@@ -9635,7 +9661,7 @@ source-map@^0.7.3, source-map@~0.7.2:
 
 sourcemap-codec@^1.4.4:
   version "1.4.8"
-  resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
+  resolved "https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
 spdx-correct@^3.0.0:

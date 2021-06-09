@@ -8,6 +8,8 @@ const VUEX_PROPERTIES = ['state', 'getters', 'actions', 'mutations']
 let store = {};
 
 (function updateModules () {
+  store = normalizeRoot(require('../store/index.js'), 'store/index.js')
+
   // If store is an exported method = classic mode (deprecated)
 
   if (typeof store === 'function') {
@@ -17,14 +19,37 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('../store/dialog/index.js'), 'dialog/index.js')
+  resolveStoreModules(require('../store/auth/actions.js'), 'auth/actions.js')
+  resolveStoreModules(require('../store/auth/getters.js'), 'auth/getters.js')
+  resolveStoreModules(require('../store/auth/mutations.js'), 'auth/mutations.js')
+  resolveStoreModules(require('../store/auth/state.js'), 'auth/state.js')
+  resolveStoreModules(require('../store/dialog/actions.js'), 'dialog/actions.js')
+  resolveStoreModules(require('../store/dialog/getters.js'), 'dialog/getters.js')
+  resolveStoreModules(require('../store/dialog/mutations.js'), 'dialog/mutations.js')
+  resolveStoreModules(require('../store/dialog/state.js'), 'dialog/state.js')
+  resolveStoreModules(require('../store/user/actions.js'), 'user/actions.js')
+  resolveStoreModules(require('../store/user/getters.js'), 'user/getters.js')
+  resolveStoreModules(require('../store/user/mutations.js'), 'user/mutations.js')
+  resolveStoreModules(require('../store/user/state.js'), 'user/state.js')
 
   // If the environment supports hot reloading...
 
   if (process.client && module.hot) {
     // Whenever any Vuex module is updated...
     module.hot.accept([
-      '../store/dialog/index.js',
+      '../store/index.js',
+      '../store/auth/actions.js',
+      '../store/auth/getters.js',
+      '../store/auth/mutations.js',
+      '../store/auth/state.js',
+      '../store/dialog/actions.js',
+      '../store/dialog/getters.js',
+      '../store/dialog/mutations.js',
+      '../store/dialog/state.js',
+      '../store/user/actions.js',
+      '../store/user/getters.js',
+      '../store/user/mutations.js',
+      '../store/user/state.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

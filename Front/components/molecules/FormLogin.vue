@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { reactive } from '@nuxtjs/composition-api';
+import { reactive, useStore } from '@nuxtjs/composition-api';
 export default {
   setup() {
     let dialog = false;
@@ -47,8 +47,10 @@ export default {
       password: '',
     });
 
-    function login() {
-      console.log(form);
+    const store = useStore()
+
+    async function login() {
+      store.dispatch('auth/login', form)
     }
 
     function showModal(event) {

@@ -1,9 +1,9 @@
 <template>
-  <h1>Home</h1>
+  <div class="page-404"></div>
 </template>
 
 <script>
 export default {
-  middleware: 'auth'
+  layout: 'error',
 }
 </script>

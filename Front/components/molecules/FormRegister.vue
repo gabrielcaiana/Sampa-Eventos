@@ -64,7 +64,7 @@
 </template>
 
 <script>
-import { reactive } from '@nuxtjs/composition-api';
+import { reactive, useContext } from '@nuxtjs/composition-api';
 export default {
   setup() {
     let items = ['Não binário', 'Masculino', 'Feminino'];
@@ -77,8 +77,11 @@ export default {
       password: '',
     });
 
-    function register() {
-      console.log(form);
+    const { store } = useContext()
+
+    async function register() {
+      await store.dispatch('user/create', form)
+      // form = {}
     }
 
     return {

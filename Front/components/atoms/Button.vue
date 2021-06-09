@@ -9,7 +9,7 @@ export default {
   props: {
     text: { type: String, required: true },
     color: { type: String, required: true },
-    type: { type: String, required: true },
+    type: { type: String, required: false },
   },
   
    methods: {
