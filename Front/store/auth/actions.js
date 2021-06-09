@@ -2,8 +2,7 @@ export default {
   async login({ commit, dispatch }, payload) {
     try {
       const { data, status } = await this.$axios.post('/auth', payload) 
-      console.log(data)
-
+ 
       if(status === 200 ) {
         commit('SET_TOKEN', 'ativo')
    

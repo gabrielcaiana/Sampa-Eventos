@@ -1,5 +1,5 @@
 <template>
-  <SiteTemplate />
+  <IndexTemplate />
 </template>
 <script>
 export default {
