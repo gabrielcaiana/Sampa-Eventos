@@ -3,35 +3,30 @@
     "name": "dashboard",
     "path": "/dashboard",
     "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/dashboard.vue",
-    "chunkName": "pages/dashboard",
-    "_name": "_166a11fb"
+    "chunkName": "pages/dashboard"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/login.vue",
-    "chunkName": "pages/login",
-    "_name": "_5d7b3860"
+    "chunkName": "pages/login"
   },
   {
     "name": "notFound",
     "path": "/notFound",
     "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/notFound.vue",
-    "chunkName": "pages/notFound",
-    "_name": "_18a39250"
+    "chunkName": "pages/notFound"
   },
   {
     "name": "register",
     "path": "/register",
     "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/register.vue",
-    "chunkName": "pages/register",
-    "_name": "_7b2e630c"
+    "chunkName": "pages/register"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_079ac0b9"
+    "chunkName": "pages/index"
   }
 ]

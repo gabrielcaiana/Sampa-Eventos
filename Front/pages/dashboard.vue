@@ -2,6 +2,7 @@
 <transition name="slide">
   <div>
     <h1>Dashboard</h1>
+     <Footer />
   </div>
 </transition>
 </template>
