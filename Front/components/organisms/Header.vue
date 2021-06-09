@@ -10,7 +10,9 @@
     </div>
 
     <div v-else class="container">
-      <Logo />
+      <nuxt-link to="/">
+        <Logo />
+      </nuxt-link>
       <ActionsHeader />
     </div>
   </header>

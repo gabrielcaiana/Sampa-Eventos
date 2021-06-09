@@ -4,7 +4,7 @@ export default {
       const { data, status } = await this.$axios.post('/auth', payload) 
 
       if(status === 200 ) {
-        commit('SET_TOKEN', data.token)
+        commit('SET_TOKEN', 'ativo')
    
         this.$cookies.set('token', 'ativo', {
           path: '/',
