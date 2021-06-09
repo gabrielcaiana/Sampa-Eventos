@@ -12,8 +12,9 @@ import '../node_modules/vuetify/dist/vuetify.css'
 
 import _13517024 from '../layouts/authentication.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _2d29803d from '../layouts/site.vue'
 
-const layouts = { "_authentication": sanitizeComponent(_13517024),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_authentication": sanitizeComponent(_13517024),"_default": sanitizeComponent(_6f6c098b),"_site": sanitizeComponent(_2d29803d) }
 
 export default {
   render (h, props) {

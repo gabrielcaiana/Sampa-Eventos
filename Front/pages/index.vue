@@ -1,6 +1,8 @@
 <template>
-  <h1>Site</h1>
+  <SiteTemplate />
 </template>
 <script>
-export default {};
+export default {
+  layout: 'site'
+};
 </script>
