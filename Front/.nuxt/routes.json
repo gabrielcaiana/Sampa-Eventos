@@ -1,5 +1,12 @@
 [
   {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_166a11fb"
+  },
+  {
     "name": "login",
     "path": "/login",
     "component": "/Users/gabrielcaiana/projects/pessoal/Sampa Eventos/Front/pages/login.vue",

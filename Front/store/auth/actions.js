@@ -7,7 +7,7 @@ export default {
         commit('SET_TOKEN', data.token)
    
         this.$cookies.set('token', 'ativo', {
-          path: '/',
+          path: '/dashboard',
           expires: new Date(data.expires_at)
         })  
 

@@ -1,24 +1,6 @@
 <template>
-  <div>
-    <h1>Home</h1>
-    <button @click="logout">Logout</button>
-  </div>
+  <h1>Site</h1>
 </template>
-
 <script>
-import { useStore } from '@nuxtjs/composition-api'
-export default {
-  middleware: 'auth',
-
-  setup() {
-    const store = useStore()
-    async function logout() {
-      store.dispatch('auth/destroy')
-    }
-
-    return {
-      logout
-    }
-  }
-}
+export default {};
 </script>
