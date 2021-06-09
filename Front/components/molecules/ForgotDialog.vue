@@ -1,42 +1,48 @@
 <template>
-  <div v-if="$dialog" class="overlay">
-    <div class="dialog">
-      <h1 class="dialog__title">Recuperar senha</h1>
-      <v-icon @click="closeModal" class="dialog__close-icon">mdi-close</v-icon>
-      <p class="dialog__description">
-        Informe seu email e enviaremos as intruções para recuperar senha senha
-      </p>
+  <transition name="slide" >
+    <div v-if="$dialog" class="overlay">
+      <div class="dialog">
+        <h1 class="dialog__title">Recuperar senha</h1>
+        <v-icon @click="closeModal" class="dialog__close-icon"
+          >mdi-close</v-icon
+        >
+        <p class="dialog__description">
+          Informe seu email e enviaremos as intruções para recuperar senha senha
+        </p>
 
-      <form @submit.prevent="submit">
-        <Input
-          v-model="email"
-          text="Email"
-          type="email"
-          placeholder="Informe seu email"
-        />
+        <form @submit.prevent="submit">
+          <Input
+            v-model="email"
+            text="Email"
+            type="email"
+            placeholder="Informe seu email"
+          />
 
-        <Button text="Recuperar" color="button-default" type="submit" />
-      </form>
+          <Button text="Recuperar" color="button-default" type="submit" />
+        </form>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
-import { ref, useStore, computed } from '@nuxtjs/composition-api'
+import { ref, useStore, computed } from '@nuxtjs/composition-api';
 export default {
+  transition: 'slide',
+
   setup() {
-    let email = ref('')
+    let email = ref('');
 
-    const store = useStore()
+    const store = useStore();
 
-    let $dialog = computed(() => store.getters['dialog/$dialog'])
+    let $dialog = computed(() => store.getters['dialog/$dialog']);
 
     function submit() {
-      console.log($dialog.value)
+      console.log($dialog.value);
     }
 
     function closeModal() {
-      email.value = ''
+      email.value = '';
       store.dispatch('dialog/showDialog', false);
     }
 
@@ -44,9 +50,9 @@ export default {
       email,
       $dialog,
       submit,
-      closeModal
-    }
-  }
+      closeModal,
+    };
+  },
 };
 </script>
 
@@ -97,5 +103,15 @@ export default {
       margin-top: 1rem;
     }
   }
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 0.5s;
+}
+.slide-enter,
+.slide-leave-to {
+  opacity: 0;
+  transition: 300ms;
 }
 </style>

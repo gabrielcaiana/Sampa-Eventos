@@ -28,6 +28,7 @@ export default {
   font-size: 1rem;
   font-weight: 400;
   width: 100%;
+  height: 100%;
   color: $white;
   cursor: pointer;
   transition: all 300ms;

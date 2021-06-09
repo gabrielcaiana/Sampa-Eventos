@@ -41,6 +41,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2.2rem 0;
 }
 
 .container {

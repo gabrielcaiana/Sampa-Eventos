@@ -3,7 +3,7 @@
   <div class="authentication">
     <v-row>
       <v-col cols="6" class="authentication__form">
-        <nuxt />
+        <Nuxt />
       </v-col>
       <v-col class="authentication__presentation" cols="6">
         <p class="authentication__presentation__description">
