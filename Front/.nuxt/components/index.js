@@ -16,9 +16,9 @@ export { default as Header } from '../../components/organisms/Header.vue'
 export { default as LoginCard } from '../../components/organisms/LoginCard.vue'
 export { default as RegisterCard } from '../../components/organisms/RegisterCard.vue'
 export { default as DashboardTemplate } from '../../components/templates/DashboardTemplate.vue'
+export { default as IndexTemplate } from '../../components/templates/IndexTemplate.vue'
 export { default as LoginTemplate } from '../../components/templates/LoginTemplate.vue'
 export { default as RegisterTemplate } from '../../components/templates/RegisterTemplate.vue'
-export { default as SiteTemplate } from '../../components/templates/SiteTemplate.vue'
 
 export const LazyButton = import('../../components/atoms/Button.vue' /* webpackChunkName: "components/button" */).then(c => wrapFunctional(c.default || c))
 export const LazyForgotPassword = import('../../components/atoms/ForgotPassword.vue' /* webpackChunkName: "components/forgot-password" */).then(c => wrapFunctional(c.default || c))
@@ -36,6 +36,6 @@ export const LazyHeader = import('../../components/organisms/Header.vue' /* webp
 export const LazyLoginCard = import('../../components/organisms/LoginCard.vue' /* webpackChunkName: "components/login-card" */).then(c => wrapFunctional(c.default || c))
 export const LazyRegisterCard = import('../../components/organisms/RegisterCard.vue' /* webpackChunkName: "components/register-card" */).then(c => wrapFunctional(c.default || c))
 export const LazyDashboardTemplate = import('../../components/templates/DashboardTemplate.vue' /* webpackChunkName: "components/dashboard-template" */).then(c => wrapFunctional(c.default || c))
+export const LazyIndexTemplate = import('../../components/templates/IndexTemplate.vue' /* webpackChunkName: "components/index-template" */).then(c => wrapFunctional(c.default || c))
 export const LazyLoginTemplate = import('../../components/templates/LoginTemplate.vue' /* webpackChunkName: "components/login-template" */).then(c => wrapFunctional(c.default || c))
 export const LazyRegisterTemplate = import('../../components/templates/RegisterTemplate.vue' /* webpackChunkName: "components/register-template" */).then(c => wrapFunctional(c.default || c))
-export const LazySiteTemplate = import('../../components/templates/SiteTemplate.vue' /* webpackChunkName: "components/site-template" */).then(c => wrapFunctional(c.default || c))

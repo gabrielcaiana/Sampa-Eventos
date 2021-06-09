@@ -12,7 +12,7 @@ export default class AuthController {
     const dataAuthentication = {
       token: token.tokenHash,
       expires: token.expiresAt,
-      user: token.user
+      user_id: token.user.id
     }
 
     return dataAuthentication

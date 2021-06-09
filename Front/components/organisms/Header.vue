@@ -27,6 +27,7 @@ export default {
 
     function logout() {
       store.dispatch('auth/destroy');
+      store.dispatch('user/setCurrentUser');
     }
 
     return {

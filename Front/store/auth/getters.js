@@ -1,3 +1,1 @@
-export default {
-  $token: state => state.token
-}
+export default {}

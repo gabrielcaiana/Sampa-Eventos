@@ -1,6 +1,6 @@
 export default {
   actions: {
-    async nuxtServerInit({ dispatch }) {
+    async nuxtServerInit({ dispatch}) {
       await dispatch('auth/update')
     }
   }

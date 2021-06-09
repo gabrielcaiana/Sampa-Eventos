@@ -47,13 +47,13 @@
   "DashboardTemplate": {
     "description": "Auto imported from components/templates/DashboardTemplate.vue"
   },
+  "IndexTemplate": {
+    "description": "Auto imported from components/templates/IndexTemplate.vue"
+  },
   "LoginTemplate": {
     "description": "Auto imported from components/templates/LoginTemplate.vue"
   },
   "RegisterTemplate": {
     "description": "Auto imported from components/templates/RegisterTemplate.vue"
-  },
-  "SiteTemplate": {
-    "description": "Auto imported from components/templates/SiteTemplate.vue"
   }
 }
