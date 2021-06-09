@@ -7,11 +7,11 @@ export default {
         commit('SET_TOKEN', data.token)
    
         this.$cookies.set('token', 'ativo', {
-          path: '/dashboard',
+          path: '/',
           expires: new Date(data.expires_at)
         })  
 
-        this.$router.push('/')
+        this.$router.push('/dashboard')
       }
     } catch(err) {
       console.log(err.response)
