@@ -21,7 +21,7 @@ export default class User extends BaseModel {
   @column()
   public gender: string
 
-  @column()
+  @column( { serializeAs: null })
   public rememberMeToken?: string
   
   @column.dateTime({ autoCreate: true, serialize: (value:DateTime) => {
