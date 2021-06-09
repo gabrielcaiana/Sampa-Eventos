@@ -4,6 +4,6 @@
 <script>
 export default {
   layout: 'authentication',
-  middleware: 'guest'
+  middleware: 'guest',
 };
 </script>

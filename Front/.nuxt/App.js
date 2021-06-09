@@ -8,6 +8,8 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../assets/scss/base.scss'
 
+import '../assets/scss/main.scss'
+
 import '../node_modules/vuetify/dist/vuetify.css'
 
 import _13517024 from '../layouts/authentication.vue'
@@ -30,7 +32,7 @@ export default {
 
     const transitionEl = h('transition', {
       props: {
-        name: 'layout',
+        name: 'slide',
         mode: 'out-in'
       },
       on: {

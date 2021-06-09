@@ -6,3 +6,5 @@ export default {
   layout: 'site'
 };
 </script>
+
+

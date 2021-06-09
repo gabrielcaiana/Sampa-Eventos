@@ -18,7 +18,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/scss/base.scss'],
+  css: ['@/assets/scss/base.scss', '@/assets/scss/main.scss'],
+
+  layoutTransition: "slide",
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['@/plugins/axios'],

@@ -1,4 +1,5 @@
 <template>
+<transition name="slide">
   <div class="authentication">
     <v-row>
       <v-col cols="6" class="authentication__form">
@@ -13,7 +14,14 @@
       <ForgotDialog />
     </v-row>
   </div>
+  </transition>
 </template>
+
+<script>
+export default {
+  layoutTransition: "slide"
+}
+</script>
 
 <style lang="scss" scoped>
 .authentication {
