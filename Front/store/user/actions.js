@@ -1,6 +1,7 @@
 export default {
-  async create(_, payload) {
+  async create(dispatch, payload) {
     try {
+      dispatch('loader/setLoader', true, { root: true })
       const { status } = await this.$axios.post('/users', payload);
 
       if (status === 200) {
@@ -11,11 +12,14 @@ export default {
       errors.forEach((error) => {
         console.log(error);
       });
+    } finally {
+      dispatch('loader/setLoader', false, { root: true })
     }
   },
 
-  async setCurrentUser({ commit }) {
+  async setCurrentUser({ commit, dispatch }) {
     try {
+      dispatch('loader/setLoader', true, { root: true })
       const id = this.$cookies.get('user_id')
 
       if(id) {
@@ -26,6 +30,8 @@ export default {
       }
     } catch(err) {
       console.log(err)
+    } finally {
+      dispatch('loader/setLoader', false, { root: true })
     }
   },
 };

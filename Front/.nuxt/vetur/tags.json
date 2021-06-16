@@ -8,6 +8,9 @@
   "Input": {
     "description": "Auto imported from components/atoms/Input.vue"
   },
+  "Loader": {
+    "description": "Auto imported from components/atoms/Loader.vue"
+  },
   "Logo": {
     "description": "Auto imported from components/atoms/Logo.vue"
   },
@@ -16,6 +19,9 @@
   },
   "Select": {
     "description": "Auto imported from components/atoms/Select.vue"
+  },
+  "Snackbar": {
+    "description": "Auto imported from components/atoms/Snackbar.vue"
   },
   "ActionsHeader": {
     "description": "Auto imported from components/molecules/ActionsHeader.vue"

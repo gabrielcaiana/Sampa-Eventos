@@ -27,6 +27,14 @@ let store = {};
   resolveStoreModules(require('../store/dialog/getters.js'), 'dialog/getters.js')
   resolveStoreModules(require('../store/dialog/mutations.js'), 'dialog/mutations.js')
   resolveStoreModules(require('../store/dialog/state.js'), 'dialog/state.js')
+  resolveStoreModules(require('../store/loader/actions.js'), 'loader/actions.js')
+  resolveStoreModules(require('../store/loader/getters.js'), 'loader/getters.js')
+  resolveStoreModules(require('../store/loader/mutations.js'), 'loader/mutations.js')
+  resolveStoreModules(require('../store/loader/state.js'), 'loader/state.js')
+  resolveStoreModules(require('../store/snackbar/actions.js'), 'snackbar/actions.js')
+  resolveStoreModules(require('../store/snackbar/getters.js'), 'snackbar/getters.js')
+  resolveStoreModules(require('../store/snackbar/mutations.js'), 'snackbar/mutations.js')
+  resolveStoreModules(require('../store/snackbar/state.js'), 'snackbar/state.js')
   resolveStoreModules(require('../store/user/actions.js'), 'user/actions.js')
   resolveStoreModules(require('../store/user/getters.js'), 'user/getters.js')
   resolveStoreModules(require('../store/user/mutations.js'), 'user/mutations.js')
@@ -46,6 +54,14 @@ let store = {};
       '../store/dialog/getters.js',
       '../store/dialog/mutations.js',
       '../store/dialog/state.js',
+      '../store/loader/actions.js',
+      '../store/loader/getters.js',
+      '../store/loader/mutations.js',
+      '../store/loader/state.js',
+      '../store/snackbar/actions.js',
+      '../store/snackbar/getters.js',
+      '../store/snackbar/mutations.js',
+      '../store/snackbar/state.js',
       '../store/user/actions.js',
       '../store/user/getters.js',
       '../store/user/mutations.js',

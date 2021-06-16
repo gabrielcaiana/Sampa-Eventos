@@ -3,9 +3,11 @@ import { wrapFunctional } from './utils'
 export { default as Button } from '../../components/atoms/Button.vue'
 export { default as ForgotPassword } from '../../components/atoms/ForgotPassword.vue'
 export { default as Input } from '../../components/atoms/Input.vue'
+export { default as Loader } from '../../components/atoms/Loader.vue'
 export { default as Logo } from '../../components/atoms/Logo.vue'
 export { default as LogoWhite } from '../../components/atoms/LogoWhite.vue'
 export { default as Select } from '../../components/atoms/Select.vue'
+export { default as Snackbar } from '../../components/atoms/Snackbar.vue'
 export { default as ActionsHeader } from '../../components/molecules/ActionsHeader.vue'
 export { default as ForgotDialog } from '../../components/molecules/ForgotDialog.vue'
 export { default as FormLogin } from '../../components/molecules/FormLogin.vue'
@@ -23,9 +25,11 @@ export { default as RegisterTemplate } from '../../components/templates/Register
 export const LazyButton = import('../../components/atoms/Button.vue' /* webpackChunkName: "components/button" */).then(c => wrapFunctional(c.default || c))
 export const LazyForgotPassword = import('../../components/atoms/ForgotPassword.vue' /* webpackChunkName: "components/forgot-password" */).then(c => wrapFunctional(c.default || c))
 export const LazyInput = import('../../components/atoms/Input.vue' /* webpackChunkName: "components/input" */).then(c => wrapFunctional(c.default || c))
+export const LazyLoader = import('../../components/atoms/Loader.vue' /* webpackChunkName: "components/loader" */).then(c => wrapFunctional(c.default || c))
 export const LazyLogo = import('../../components/atoms/Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c))
 export const LazyLogoWhite = import('../../components/atoms/LogoWhite.vue' /* webpackChunkName: "components/logo-white" */).then(c => wrapFunctional(c.default || c))
 export const LazySelect = import('../../components/atoms/Select.vue' /* webpackChunkName: "components/select" */).then(c => wrapFunctional(c.default || c))
+export const LazySnackbar = import('../../components/atoms/Snackbar.vue' /* webpackChunkName: "components/snackbar" */).then(c => wrapFunctional(c.default || c))
 export const LazyActionsHeader = import('../../components/molecules/ActionsHeader.vue' /* webpackChunkName: "components/actions-header" */).then(c => wrapFunctional(c.default || c))
 export const LazyForgotDialog = import('../../components/molecules/ForgotDialog.vue' /* webpackChunkName: "components/forgot-dialog" */).then(c => wrapFunctional(c.default || c))
 export const LazyFormLogin = import('../../components/molecules/FormLogin.vue' /* webpackChunkName: "components/form-login" */).then(c => wrapFunctional(c.default || c))

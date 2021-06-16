@@ -1,26 +1,40 @@
 <template>
-<transition name="slide">
-  <div class="authentication">
-    <v-row>
-      <v-col cols="6" class="authentication__form">
-        <Nuxt />
-      </v-col>
-      <v-col class="authentication__presentation" cols="6">
-        <p class="authentication__presentation__description">
-          O Sampa <span>eventos</span> é uma forma diferente e divertida de você
-          encontrar e provomover eventos.
-        </p>
-      </v-col>
-      <ForgotDialog />
-    </v-row>
-  </div>
+  <transition name="slide">
+    <div class="authentication">
+      <no-ssr>
+        <Loader :show="$loader" />
+     
+      </no-ssr>
+      <v-row>
+        <v-col cols="6" class="authentication__form">
+          <Nuxt />
+        </v-col>
+        <v-col class="authentication__presentation" cols="6">
+          <p class="authentication__presentation__description">
+            O Sampa <span>eventos</span> é uma forma diferente e divertida de
+            você encontrar e provomover eventos.
+          </p>
+        </v-col>
+        <ForgotDialog />
+      </v-row>
+    </div>
   </transition>
 </template>
 
 <script>
+import { useStore, computed } from '@nuxtjs/composition-api';
 export default {
-  layoutTransition: "slide"
-}
+  layoutTransition: 'slide',
+  setup() {
+    const store = useStore();
+
+    const $loader = computed(() => store.getters['loader/$loader']);
+
+    return {
+      $loader,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

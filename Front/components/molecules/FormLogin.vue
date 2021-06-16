@@ -49,7 +49,7 @@ export default {
 
     const store = useStore()
 
-    async function login() {
+    function login() {
       store.dispatch('auth/login', form)
     }
 

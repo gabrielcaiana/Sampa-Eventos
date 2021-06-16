@@ -1,6 +1,7 @@
 export default {
   async login({ commit, dispatch }, payload) {
     try {
+      dispatch('loader/setLoader', true, { root: true })
       const { data, status } = await this.$axios.post('/auth', payload) 
  
       if(status === 200 ) {
@@ -16,10 +17,13 @@ export default {
           expires: new Date(data.expires)
         })  
 
+        dispatch('snackbar/setSnackbar', { visible: true, message: "teste"}, { root: true })
         this.$router.push('/dashboard')
       }
     } catch(err) {
       console.log(err.response)
+    } finally {
+      dispatch('loader/setLoader', false, { root: true })
     }
   }, 
 
